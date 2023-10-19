@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-size: cover;
+            background-image: url(https://i.pinimg.com/564x/64/e0/09/64e00975705f63ba0834d5d9ffebaf21.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+</body>
+<script>
+    let date = new Date();
+    let h1 = document.querySelector("h1");
+
+    let msg;
+    (date.getDate() === 15 && date.getMonth() === 4) ? msg = "Yessir!" : msg = "Nope come again tomorrow!";
+    h1.innerHTML = msg;
+    h1.style.fontSize = "70pt"
+    h1.style.fontWeight = "bold"
+    h1.style.textAlign = "center"
+    h1.style.lineHeight = "75vh"
+    h1.style.color = "salmon"
+</script>
+</html>
